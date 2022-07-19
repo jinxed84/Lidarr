@@ -29,6 +29,7 @@ import UISettingsConnector from 'Settings/UI/UISettingsConnector';
 import BackupsConnector from 'System/Backup/BackupsConnector';
 import LogsTableConnector from 'System/Events/LogsTableConnector';
 import Logs from 'System/Logs/Logs';
+import PluginsConnector from 'System/Plugins/PluginsConnector';
 import Status from 'System/Status/Status';
 import Tasks from 'System/Tasks/Tasks';
 import UpdatesConnector from 'System/Updates/UpdatesConnector';
@@ -235,6 +236,11 @@ function AppRoutes(props) {
       <Route
         path="/system/updates"
         component={UpdatesConnector}
+      />
+
+      <Route
+        path="/system/plugins"
+        component={PluginsConnector}
       />
 
       <Route
